@@ -11,8 +11,8 @@ public class EstatisticasSimplesTest {
 	@Test
 	public void deveCalcularValorMaximoEntreDoisValores() {
 	double valoresDeEntrada[] = {5,9};
-	double valorMinimoCalculado = EstatisticasSimples.calculaValorMaximo(valoresDeEntrada);
-	assertEquals(9, valorMinimoCalculado, 0);
+	double valorMaximoCalculado = EstatisticasSimples.calculaValorMaximo(valoresDeEntrada);
+	assertEquals(9, valorMaximoCalculado, 0);
 	}
 
 	@Test
@@ -36,7 +36,7 @@ public class EstatisticasSimplesTest {
 	}
 	@Test
 	public void deveCalcularValorMinimoEntreDezValores() {
-	double valoresDeEntrada[] = {1024,512,254,128,64,32,16,2,4,8};
+	double valoresDeEntrada[] = {1024,512,254,128,2,32,16,2,4,8};
 	double valorMinimoCalculado = EstatisticasSimples.calculaValorMinimo(valoresDeEntrada);
 	assertEquals(2, valorMinimoCalculado, 0);
 	}
